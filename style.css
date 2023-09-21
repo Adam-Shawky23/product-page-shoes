@@ -1,0 +1,373 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    overflow: scroll;
+}
+p{
+    color:hsl(220, 14%, 75%);
+}
+header{
+    display: flex;
+    align-items: baseline;
+    margin-top: 0px;
+}
+.menu{
+    margin: 0px 40px 0px 40px;
+}
+.menu:hover{
+    color:black;
+    transform: scale(1.03);
+}
+#avatar{
+    width:35px;
+    height:35px;
+    margin-top: 20px;
+    margin-left: 1190px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    position: fixed;
+}
+#avatar:hover{
+    border:2px solid hsl(26, 100%, 55%);
+    border-radius: 50%;
+}
+h1{
+    margin-left: 100px;
+}
+#cart{
+    margin-left: 220px;
+    margin-right: 20px;
+}
+.product{
+    display: flex;
+    margin-top: 50px;
+    position:fixed;
+    top:95px;
+    z-index: 0;
+}
+.photo{
+    width:340px;
+    height:340px;
+    border-radius: 10px;
+}
+#photo1{
+    display: block;
+}
+#photo2{
+    display: none;
+}
+#photo3{
+    display: none;
+}
+#photo4{
+    display: none;
+}
+.photos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 170px;
+}
+.smallphotos{
+    display: flex;
+}
+.small{
+    margin-top: 10px;
+    width:75px;
+    height: 75px;
+    border-radius: 5px;
+    margin-right: 13px;
+}
+.text{
+    align-items: center;
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 100px;
+    margin-top: 10px;
+}
+h3{
+    color:hsl(26, 100%, 55%);
+    letter-spacing: 2px;
+    font-size:17px;
+    margin-bottom: 7px;
+    margin-top: 20px;
+}
+#title{
+    font-size: 7ch;
+    margin: 0px;
+    z-index: 1;
+}
+#description{
+    font-size: 16px;
+}
+.price{
+    display: flex;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+h4{
+    background-color: hsl(25, 100%, 94%);
+    color:hsl(26, 100%, 55%);
+    border-radius: 5px;
+    border: none;
+    margin-left: 20px;
+    width:40px;
+    text-align: center;
+    height:min-content;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+#oldprice{
+    text-decoration: line-through;
+    margin-top: 0px;
+    padding: 0px;
+    color:hsl(220, 14%, 75%);
+}
+.addtocart{
+    display: flex;
+}
+.add{
+    display: flex;
+    color:black;
+    background-color:hsl(233, 8%, 79%) ;
+    border-radius: 5px;
+    width: 150px;
+    height:45px;
+    align-items: center;
+    justify-content: center;
+}
+#number{
+    margin-left: 15px;
+    margin-right: 15px;
+    color:black;
+}
+button{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(26, 100%, 55%);
+    color:white ;
+    margin-left: 20px;
+    width:180px;
+    border: none;
+    border-radius: 5px;
+}
+#cart2{
+    color:white;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+.small:hover{
+    opacity: 0.5;
+}
+#small1{
+    opacity: 0.5;
+    border: 2px solid red;
+}
+section{
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+#newphoto{
+    position: absolute;
+    top: 130px;
+    left:500px;
+}
+#newphoto1{
+    position: absolute;
+    top: 130px;
+    left:500px;
+    display: none;
+}
+#newphoto2{
+    position: absolute;
+    top: 130px;
+    left:500px;
+    display: none;
+}
+#newphoto3{
+    position: absolute;
+    top: 130px;
+    left:500px;
+    display: none;
+}
+#close{
+    position: relative;
+    left:810px;
+    bottom: 00px;
+}
+#close:hover{
+    opacity: 0.7;
+}
+.popupcart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+}
+.popup{
+    width:300px;
+    height:150px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 90px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: -2px 2px 0px 3px rgba(80, 78, 78, 0.75);
+-webkit-box-shadow: -2px 2px 0px 3px rgba(58, 56, 56, 0.75);
+-moz-box-shadow: -2px 2px 0px 3px rgba(46, 45, 45, 0.75);
+z-index: 2;
+display: none;
+}
+#popup.h{
+    display: block;
+}
+.item{
+    display: flex;
+    align-items: start;
+    margin-left: 10px;
+}
+.smallimg{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#noitems{
+    display:none;
+}
+#name{
+    font-size: 14px;
+    margin-top: 10px;
+}
+#trash{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#money{
+    font-family: 'Kumbh Sans', sans-serif;;
+}
+#addcart:hover{
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+#before{
+    display: none;
+}
+#after{
+    display: none;
+}
+#photo6{
+    display: none;
+}
+#photo7{
+    display: none;
+}
+#photo8{
+    display: none;
+}
+#photo9{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    body{
+        font-size:14px;
+        margin-left: 0px;
+        padding: 0;
+    }
+    .menu{
+        display: none;
+    }
+    .photos{
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 100%;
+    }
+    .product{
+        display: flex;
+        flex-direction: column;
+    }
+    #cart{
+        margin-left: 150px;
+    }
+    h1{
+        margin-left: 40px;
+        font-size: 12px;
+
+    }
+    .photo{
+        margin-left: 0px;
+        height: auto;
+        padding: 0px;
+        width:60vw;
+        margin-left: 40px;
+    }
+    .smallphotos{
+        display: none;
+    }
+    .product{
+        top:20px;
+    }
+    #title{
+        font-size: 3ch;
+        padding-right: 0px;
+    }
+    #description{
+        font-size:10px ;
+        padding-right: 0px;
+    }
+    .text{
+        margin-left: 0px;
+        padding-left: 30px;
+        margin-top: 10px;
+        padding-right: 0px;
+    }
+    .addtocart{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    #addcart{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .popup{
+        margin-left: 0px;
+        background-color: white;
+        width:280px;
+        position: relative;
+        right:60px;
+    }
+    #photo1{
+        display: none;
+    }
+    #photo6{
+        display: block;
+    }
+    #before{
+        display: block;
+        background-color: white;
+        color:orange;
+        width:30px;
+        border-radius: 50%;
+        position: relative;
+        top:140px;
+        left:10px;
+    }
+    #photo1{
+        display: none;
+    }
+    #after{
+        display: block;
+        background-color: white;
+        color:orange;
+        width:40px;
+        border-radius: 50%;
+        position: relative;
+        left:285px;
+        top:-132px;
+        transform: rotate(180deg);
+    }
+    #trash{
+        margin-left: 5px;
+    }
+}
